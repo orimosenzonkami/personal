@@ -1,0 +1,16 @@
+paper:
+	echo Latixing.. 
+	latex paper.tex
+	echo 
+	echo ------------------------
+	dvipdf paper.dvi
+	echo ------------------------
+	echo 
+	evince paper.pdf
+
+orig:
+	latex orig.tex
+	dvipdf orig.dvi
+	evince orig.pdf
+
+
